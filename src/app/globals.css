@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F6F1E9;
+  --foreground: #2E4A5C;
+  --surface: #EDE3D3;
+  --muted: #5B6B75;
+  --accent: #B4835A;
+  --accent-hover: #9C6F49;
+  --footer-bg: #33495A;
+  --footer-text: #E7ECEE;
+  --footer-muted: #B7C3C9;
+  --border-subtle: #E3D9C8;
+  --whatsapp: #25D366;
+  --success: #2FA84F;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+  --color-footer-muted: var(--footer-muted);
+  --color-border-subtle: var(--border-subtle);
+  --color-whatsapp: var(--whatsapp);
+  --color-success: var(--success);
+  --font-heading: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--foreground);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F1E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #B4835A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9C6F49;
+}
+
+/* Smooth Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
