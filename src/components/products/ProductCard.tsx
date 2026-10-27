@@ -17,7 +17,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
         <div className="relative aspect-square w-full bg-[#EDE3D3]/40 overflow-hidden">
           <Image
             src={product.heroImage}
-            alt={`${product.name} OEM manufacturing in Surat, India`}
+            alt={`${product.name} OEM manufacturing in Gujarat, India`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             priority={priority}
@@ -27,9 +27,9 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           <div className="absolute top-3 left-3 bg-[#2E4A5C]/85 backdrop-blur-md text-white text-[11px] font-semibold tracking-wide uppercase px-3 py-1 rounded-full shadow-sm">
             {product.category}
           </div>
-          {/* Port Tag */}
+          {/* Export / OEM Tag */}
           <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-[#2E4A5C] text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm border border-[#E3D9C8]/60">
-            🚢 FOB Hazira
+            OEM / Private Label
           </div>
         </div>
 

@@ -14,7 +14,7 @@ const quotationSchema = z.object({
   email: z.string().email("Please enter a valid business email address"),
   phone: z.string().optional(),
   productInterested: z.string().min(1, "Please select a product of interest"),
-  coreType: z.string().min(1, "Please choose a core option"),
+  coreType: z.string().optional(),
   targetMarket: z.string().min(1, "Please select your target market"),
   message: z.string().optional(),
   agreePrivacy: z.boolean().refine((val) => val === true, {
@@ -42,7 +42,6 @@ export function QuotationForm({ initialProduct = "", className = "" }: Quotation
     resolver: zodResolver(quotationSchema),
     defaultValues: {
       productInterested: initialProduct || "",
-      coreType: "not-sure",
       targetMarket: "Middle East",
       agreePrivacy: true,
     },
@@ -216,34 +215,6 @@ export function QuotationForm({ initialProduct = "", className = "" }: Quotation
               <option value="Australia & Oceania">Australia & Oceania</option>
               <option value="Other">Other Region</option>
             </select>
-          </div>
-        </div>
-
-        {/* Core Type Preference */}
-        <div>
-          <label className="block text-xs font-semibold text-[#2E4A5C] mb-1.5">
-            Preferred Core Technology Option
-          </label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-            {[
-              { id: "wood-pulp", label: "Wood Pulp" },
-              { id: "composite", label: "Composite" },
-              { id: "all-sap", label: "All-SAP" },
-              { id: "not-sure", label: "Recommend for me" },
-            ].map((option) => (
-              <label
-                key={option.id}
-                className="flex items-center gap-2 p-2.5 rounded-xl border border-[#E3D9C8] text-xs font-medium text-[#2E4A5C] hover:bg-[#F6F1E9] cursor-pointer"
-              >
-                <input
-                  type="radio"
-                  value={option.id}
-                  {...register("coreType")}
-                  className="text-[#B4835A] focus:ring-[#B4835A]"
-                />
-                <span>{option.label}</span>
-              </label>
-            ))}
           </div>
         </div>
 

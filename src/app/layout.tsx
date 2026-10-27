@@ -31,15 +31,14 @@ export const metadata: Metadata = {
     template: "%s | Vega Impex",
   },
   description:
-    "Vega Impex is an Indian hygiene products OEM manufacturer based in Surat, Gujarat. Exporting premium baby diapers, pull-up pants, sanitary napkins, period underwear, adult diapers, and wipes via FOB Hazira Port.",
+    "Vega Impex is an Indian hygiene products OEM manufacturer based in Gujarat. Exporting premium baby diapers, sanitary napkins, period underwear, adult diapers, and underpads to global markets.",
   keywords: [
     "Baby Diapers Manufacturer India",
     "OEM Sanitary Napkins Factory",
     "Disposable Period Pants India",
-    "Baby Pull Up Pants OEM",
-    "Adult Diaper Manufacturer Surat",
+    "Adult Diaper Manufacturer India",
+    "Underpads OEM Manufacturer India",
     "Hygiene Products Exporter India",
-    "FOB Hazira Port",
   ],
   authors: [{ name: "Vega Impex Export Division" }],
   creator: "Vega Impex",
@@ -56,20 +55,20 @@ export const metadata: Metadata = {
     siteName: "Vega Impex",
     title: "Vega Impex | OEM Baby Diapers, Sanitary Napkins & Period Pants Manufacturer in India",
     description:
-      "Direct OEM hygiene manufacturing network in Surat, Gujarat. Low MOQ, Sumitomo SAP, FOB Hazira Port export. 30+ countries served.",
+      "Direct OEM hygiene manufacturing network in Gujarat, India. Low MOQ, advanced SAP core, global container export.",
     images: [
       {
         url: "/images/hero/hero-banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Vega Impex OEM Hygiene Manufacturing Network Surat India",
+        alt: "Vega Impex OEM Hygiene Manufacturing Network Gujarat India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Vega Impex | Indian OEM Hygiene Products Manufacturer",
-    description: "Exporting premium baby diapers, sanitary napkins, period pants, and adult diapers from Surat, Gujarat.",
+    description: "Exporting premium baby diapers, sanitary napkins, period pants, and adult diapers from Gujarat, India.",
     images: ["/images/hero/hero-banner.jpg"],
   },
   robots: {
@@ -84,12 +83,12 @@ const organizationSchema = {
   name: "Vega Impex",
   legalName: "Vega Impex Integrated Manufacturing Network",
   url: siteUrl,
-  logo: `${siteUrl}/logo.svg`,
+  logo: `${siteUrl}/logo-full.png`,
   description:
-    "Indian hygiene products OEM manufacturer based in Surat, Gujarat. Producing baby diapers, menstrual pants, sanitary pads, adult briefs, and wipes.",
+    "Indian hygiene products OEM manufacturer based in Gujarat. Producing baby diapers, menstrual pants, sanitary pads, adult briefs, and underpads.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Surat",
+    addressLocality: "Gujarat",
     addressRegion: "Gujarat",
     addressCountry: "India",
   },

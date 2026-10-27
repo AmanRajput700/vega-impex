@@ -20,13 +20,13 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "OEM & ODM Private Label Service | Hygiene Products India – Vega Impex",
   description:
-    "Turnkey private label and OEM manufacturing for baby diapers, sanitary napkins, period underwear, and wipes in Surat, Gujarat. Low MOQ from 1x20GP container, free artwork assistance, FOB Hazira Port.",
+    "Turnkey private label and OEM manufacturing for baby diapers, sanitary napkins, period underwear, adult diapers, and underpads in Gujarat, India. Low MOQ from 1x20GP container, free artwork assistance, export to global markets.",
   alternates: {
     canonical: "https://vegaimpex.com/oem-service",
   },
   openGraph: {
     title: "OEM & ODM Private Label Service | Hygiene Products India – Vega Impex",
-    description: "Launch your private label hygiene brand with Vega Impex. Custom dielines, Japanese SAP, ISO 9001 certified production.",
+    description: "Launch your private label hygiene brand with Vega Impex. Custom dielines, advanced SAP core, ISO 9001 certified production in Gujarat, India.",
     url: "https://vegaimpex.com/oem-service",
   },
 };

@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
     slug: "oem-baby-diapers-guide",
     title: "OEM Baby Diapers Manufacturing Guide: From Core Selection to Private Label Success",
     excerpt: "Everything brand owners need to know about custom diaper engineering, SAP polymer selection, leak guard barriers, and private label packaging in Surat's manufacturing cluster.",
-    coverImage: "/images/products/baby-pull-up-pants.jpg",
+    coverImage: "/images/factory/automated-production.jpg",
     publishedAt: "2026-03-02",
     readTime: "8 min read",
     author: "Product Engineering Team",

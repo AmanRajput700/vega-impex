@@ -21,18 +21,26 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12 border-b border-white/10">
           {/* Col 1: Brand & Overview (Spans 2 cols on lg) */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-block">
-              <div className="relative w-56 h-12">
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-11 h-11 shrink-0">
                 <Image
-                  src="/logo-white.svg"
+                  src="/logo-mark.png"
                   alt="Vega Impex Logo"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain"
                 />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-extrabold text-xl tracking-wider text-white leading-none">
+                  VEGA IMPEX
+                </span>
+                <span className="text-[9px] font-semibold text-[#B4835A] tracking-widest uppercase mt-1">
+                  Hygiene OEM &amp; Export
+                </span>
               </div>
             </Link>
             <p className="text-sm text-[#B7C3C9] leading-relaxed max-w-sm">
-              Vega Impex Integrated Manufacturing Network is headquartered in Surat, Gujarat — India&apos;s premier hygiene manufacturing cluster. Delivering flexible OEM/ODM private-label baby, feminine, and adult care hygiene solutions worldwide via FOB Hazira Port.
+              Vega Impex is a trusted hygiene products OEM manufacturer and export partner in Gujarat, India. Delivering flexible OEM/ODM private-label baby, feminine, and adult care hygiene solutions worldwide.
             </p>
 
             {/* Certifications Badge Pills */}
@@ -187,18 +195,16 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Global Logistics note */}
+        {/* Bottom Bar: Copyright & Links */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#B7C3C9]">
-          <p>© 2026 Vega Impex. All rights reserved. Sourced from Surat&apos;s hygiene manufacturing cluster.</p>
+          <p>© 2026 Vega Impex. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <span>FOB Hazira Port · EXW · CFR · CIF</span>
-            <span className="text-white/20">|</span>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">
-              Privacy
+              Privacy Policy
             </Link>
             <span className="text-white/20">|</span>
             <Link href="/terms-of-service" className="hover:text-white transition-colors">
-              Terms
+              Terms of Service
             </Link>
           </div>
         </div>

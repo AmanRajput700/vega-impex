@@ -13,11 +13,6 @@ export const productNavItems: NavItem[] = [
     badge: "Bestseller",
   },
   {
-    label: "Baby Pull-Up Pants",
-    href: "/products/baby-pull-up-pants",
-    description: "360° elastic waistband training pants with tearable seams",
-  },
-  {
     label: "Sanitary Napkins",
     href: "/products/sanitary-napkins",
     description: "Ultra-thin organic cotton pads with functional anion chip",
@@ -43,11 +38,6 @@ export const productNavItems: NavItem[] = [
     label: "Underpads",
     href: "/products/underpads",
     description: "5-layer diamond embossed waterproof bed and clinic pads",
-  },
-  {
-    label: "Baby Wipes",
-    href: "/products/baby-wipes",
-    description: "99% pure water alcohol-free hypoallergenic wet wipes",
   },
 ];
 

@@ -20,6 +20,10 @@ import {
   PlayCircle,
   Calendar,
   Phone,
+  Search,
+  BadgeDollarSign,
+  ClipboardCheck,
+  Truck,
 } from "lucide-react";
 import { products } from "@/data/products";
 import { blogPosts } from "@/data/blog";
@@ -47,31 +51,11 @@ export default function HomePage() {
       <JsonLd data={websiteSchema} />
 
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#EDE3D3]/40 via-[#F6F1E9] to-[#F6F1E9] py-14 lg:py-24 border-b border-[#E3D9C8]">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#EDE3D3]/40 via-[#F6F1E9] to-[#F6F1E9] py-14 lg:py-20 border-b border-[#E3D9C8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
-              {/* Feature Badges Pill Row */}
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-[#E3D9C8] text-[#2E4A5C] shadow-sm">
-                  <Ship className="w-3.5 h-3.5 text-[#B4835A]" />
-                  FOB Hazira Port
-                </span>
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-[#E3D9C8] text-[#2E4A5C] shadow-sm">
-                  <Factory className="w-3.5 h-3.5 text-[#B4835A]" />
-                  OEM / ODM Service
-                </span>
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-[#E3D9C8] text-[#2E4A5C] shadow-sm">
-                  <PackageCheck className="w-3.5 h-3.5 text-[#B4835A]" />
-                  Small Test Order (1×20GP)
-                </span>
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white border border-[#E3D9C8] text-[#2E4A5C] shadow-sm">
-                  <Tag className="w-3.5 h-3.5 text-[#B4835A]" />
-                  White Label / Neutral Pack
-                </span>
-              </div>
-
               {/* H1 Headline */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2E4A5C] leading-[1.18] tracking-tight">
                 Trusted OEM Baby Diapers, Sanitary Napkins &amp; Period Pants Manufacturer in India
@@ -79,7 +63,7 @@ export default function HomePage() {
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-[#5B6B75] leading-relaxed max-w-2xl">
-                Partner with India&apos;s leading hygiene manufacturing network in Surat, Gujarat. We engineer and export high-absorbency baby diapers, pull-up pants, sanitary pads, period underwear, and adult care essentials to 30+ countries.
+                Partner with India&apos;s leading hygiene manufacturing network in Gujarat. We engineer and export high-absorbency baby diapers, sanitary pads, period underwear, and adult care essentials to 5+ countries.
               </p>
 
               {/* CTA Row */}
@@ -94,7 +78,7 @@ export default function HomePage() {
                   href="/products"
                   className="px-7 py-4 rounded-full text-base font-semibold text-[#2E4A5C] bg-[#EDE3D3] hover:bg-[#E3D9C8] border border-[#E3D9C8] transition-colors"
                 >
-                  Explore 8 Product Lines
+                  Explore 6 Product Lines
                 </Link>
               </div>
 
@@ -102,9 +86,9 @@ export default function HomePage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-[#E3D9C8]/80">
                 <div className="bg-white/80 p-3.5 rounded-2xl border border-[#E3D9C8]/60 shadow-sm">
                   <span className="text-xl sm:text-2xl font-extrabold text-[#2E4A5C] block">
-                    30+
+                    5+
                   </span>
-                  <span className="text-xs text-[#5B6B75] font-medium">Countries Served</span>
+                  <span className="text-xs text-[#5B6B75] font-medium">Countries &amp; Regions</span>
                 </div>
                 <div className="bg-white/80 p-3.5 rounded-2xl border border-[#E3D9C8]/60 shadow-sm">
                   <span className="text-xl sm:text-2xl font-extrabold text-[#2E4A5C] block">
@@ -127,24 +111,117 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Hero Image Card */}
+            {/* Right Hero: Product Showcase (Replaced Network Card) */}
             <div className="lg:col-span-5">
-              <div className="relative aspect-[4/3] lg:aspect-square w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                <Image
-                  src="/images/hero/hero-banner.jpg"
-                  alt="Vega Impex hygiene product manufacturing and Hazira port export"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2E4A5C]/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#EDE3D3] mb-1">
-                    Integrated Manufacturing Network
+              <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E3D9C8] shadow-2xl relative">
+                <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#E3D9C8]/70">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#B4835A] block">
+                      Core Export Lines
+                    </span>
+                    <h3 className="text-base font-bold text-[#2E4A5C]">
+                      OEM &amp; Private Label Catalog
+                    </h3>
+                  </div>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#EDE3D3] text-[#B4835A]">
+                    6 Products
                   </span>
-                  <p className="text-sm font-semibold text-white/95">
-                    Surat, Gujarat · Sourcing, QC &amp; Container Export via FOB Hazira Port
-                  </p>
+                </div>
+
+                {/* 2x2 Product Showcase Grid with Real Product Photos */}
+                <div className="grid grid-cols-2 gap-3.5">
+                  <Link
+                    href="/products/baby-diapers"
+                    className="group relative rounded-2xl overflow-hidden border border-[#E3D9C8] bg-[#F6F1E9] p-3 hover:shadow-md transition-all flex flex-col justify-between"
+                  >
+                    <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-2 bg-white">
+                      <Image
+                        src="/images/products/baby-diapers.jpg"
+                        alt="Baby Diapers OEM"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <span className="text-xs font-bold text-[#2E4A5C] group-hover:text-[#B4835A] transition-colors truncate">
+                      Baby Diapers
+                    </span>
+                    <span className="text-[10px] text-[#5B6B75]">
+                      Sizes NB to XXL
+                    </span>
+                  </Link>
+
+                  <Link
+                    href="/products/sanitary-napkins"
+                    className="group relative rounded-2xl overflow-hidden border border-[#E3D9C8] bg-[#F6F1E9] p-3 hover:shadow-md transition-all flex flex-col justify-between"
+                  >
+                    <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-2 bg-white">
+                      <Image
+                        src="/images/products/sanitary-napkins.jpg"
+                        alt="Sanitary Napkins OEM"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <span className="text-xs font-bold text-[#2E4A5C] group-hover:text-[#B4835A] transition-colors truncate">
+                      Sanitary Napkins
+                    </span>
+                    <span className="text-[10px] text-[#5B6B75]">
+                      Cotton &amp; Overnight
+                    </span>
+                  </Link>
+
+                  <Link
+                    href="/products/disposable-period-pants"
+                    className="group relative rounded-2xl overflow-hidden border border-[#E3D9C8] bg-[#F6F1E9] p-3 hover:shadow-md transition-all flex flex-col justify-between"
+                  >
+                    <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-2 bg-white">
+                      <Image
+                        src="/images/products/disposable-period-pants.jpg"
+                        alt="Period Pants OEM"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <span className="text-xs font-bold text-[#2E4A5C] group-hover:text-[#B4835A] transition-colors truncate">
+                      Period Pants
+                    </span>
+                    <span className="text-[10px] text-[#5B6B75]">
+                      360° Leak Protection
+                    </span>
+                  </Link>
+
+                  <Link
+                    href="/products/adult-diapers"
+                    className="group relative rounded-2xl overflow-hidden border border-[#E3D9C8] bg-[#F6F1E9] p-3 hover:shadow-md transition-all flex flex-col justify-between"
+                  >
+                    <div className="relative aspect-square w-full rounded-xl overflow-hidden mb-2 bg-white">
+                      <Image
+                        src="/images/products/adult-diapers.jpg"
+                        alt="Adult Diapers OEM"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <span className="text-xs font-bold text-[#2E4A5C] group-hover:text-[#B4835A] transition-colors truncate">
+                      Adult Diapers
+                    </span>
+                    <span className="text-[10px] text-[#5B6B75]">
+                      Heavy Incontinence
+                    </span>
+                  </Link>
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-[#E3D9C8]/70 flex items-center justify-between text-xs">
+                  <span className="text-[#5B6B75] flex items-center gap-1.5 font-medium">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#2FA84F]" />
+                    Custom Branding &amp; Neutral Pack
+                  </span>
+                  <Link
+                    href="/products"
+                    className="font-bold text-[#B4835A] hover:text-[#9C6F49] flex items-center gap-1"
+                  >
+                    All 6 Lines <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -152,13 +229,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. OUR MAIN PRODUCTS (8 Cards - No Pet Diapers) */}
+      {/* 2. OUR MAIN PRODUCTS (6 Clean Cards) */}
       <section className="py-16 lg:py-24 bg-[#F6F1E9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A] block mb-2">
-              Export Portfolio
-            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2E4A5C]">
               Our Main Hygiene Products
             </h2>
@@ -167,7 +241,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
@@ -195,7 +269,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#2E4A5C] mb-1">
-                  Surat, India — Trusted Supply Base
+                  Gujarat, India — Trusted Supply Base
                 </h3>
                 <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
                   Located in India&apos;s foremost non-woven and textile hub, ensuring direct raw material access and dependable production capacity.
@@ -212,7 +286,7 @@ export default function HomePage() {
                   Strategic Export Logistics
                 </h3>
                 <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                  FOB Hazira Port offers fast container stuffing, swift customs clearance, and seamless maritime connections worldwide.
+                  Fast container stuffing, swift customs clearance, and seamless maritime connections to worldwide continental ports.
                 </p>
               </div>
             </div>
@@ -226,7 +300,7 @@ export default function HomePage() {
                   Three-Tier Core Options
                 </h3>
                 <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                  Choose between economical Wood Pulp, balanced Composite, or ultra-thin all-SAP cores to match your market price point.
+                  Choose between economical Wood Pulp, balanced Composite, or ultra-thin all-SAP cores to match your target retail tier.
                 </p>
               </div>
             </div>
@@ -257,9 +331,9 @@ export default function HomePage() {
                   <span>Payment Terms</span>
                 </div>
                 <ul className="space-y-2 text-xs sm:text-sm text-[#5B6B75]">
-                  <li>• T/T: 30% deposit, 70% against B/L copy</li>
+                  <li className="font-semibold text-[#2E4A5C]">• T/T: 30% Advance deposit, 70% against B/L copy</li>
                   <li>• 100% Irrevocable L/C at sight supported</li>
-                  <li>• D/P terms negotiable for long-term buyers</li>
+                  <li>• D/P terms negotiable for vetted repeat partners</li>
                   <li>• Secure international banking channels</li>
                 </ul>
               </div>
@@ -271,7 +345,7 @@ export default function HomePage() {
                 </div>
                 <ul className="space-y-2 text-xs sm:text-sm text-[#5B6B75]">
                   <li>• Physical samples: 3–7 business days</li>
-                  <li>• Initial OEM run: 20–25 days (plate engraving)</li>
+                  <li>• Initial OEM run: 20–25 days (artwork confirmation)</li>
                   <li>• Repeat mass orders: 15–20 days</li>
                   <li>• Emergency rush scheduling upon request</li>
                 </ul>
@@ -283,9 +357,9 @@ export default function HomePage() {
                   <span>Incoterms &amp; Documents</span>
                 </div>
                 <ul className="space-y-2 text-xs sm:text-sm text-[#5B6B75]">
-                  <li>• Primary Port: FOB Hazira Port (Surat)</li>
+                  <li>• Primary Port: FOB Hazira Port (Gujarat)</li>
                   <li>• EXW, CFR, and CIF negotiable</li>
-                  <li>• Complete documentation: CO, B/L, Invoice</li>
+                  <li>• Complete documentation: CO, Form-E, B/L, Invoice</li>
                   <li>• SGS / BV pre-shipment inspection passed</li>
                 </ul>
               </div>
@@ -294,7 +368,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. WE EXPORT TO 30+ COUNTRIES & REGIONS */}
+      {/* 5. WE EXPORT TO 5+ COUNTRIES & REGIONS */}
       <section className="py-16 lg:py-20 bg-white border-b border-[#E3D9C8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -302,7 +376,7 @@ export default function HomePage() {
               International Footprint
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#2E4A5C]">
-              We Export to 30+ Countries &amp; Regions
+              We Export to 5+ Countries &amp; Regions
             </h2>
             <p className="text-sm sm:text-base text-[#5B6B75] mt-2">
               Supplying high-volume distributors, pharmacy chains, and private brands across four primary continental markets.
@@ -373,129 +447,226 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. QUALITY IN EVERY DETAIL (4 feature tiles) */}
-      <section className="py-16 lg:py-20 bg-[#F6F1E9]">
+      {/* 6. STRICT QUALITY CONTROL PROCESS (Kairui 4-Step Process with Photos) */}
+      <section className="py-16 lg:py-24 bg-[#F6F1E9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A] block mb-2">
-              Engineering Rigor
+              Comprehensive Quality Assurance
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2E4A5C]">
-              Quality in Every Detail
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2E4A5C]">
+              Our Quality Control Process
             </h2>
-            <p className="text-xs sm:text-sm text-[#5B6B75] mt-1">
-              Every production batch undergoes multi-stage automated and laboratory verification.
+            <p className="text-sm sm:text-base text-[#5B6B75] mt-2">
+              Ensuring product safety, consistency, and compliance for baby diapers, sanitary pads, and adult incontinence products.
             </p>
           </div>
 
+          {/* 4-Step QC Grid with Photos & Badges */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-[#EDE3D3] text-[#B4835A] flex items-center justify-center mb-4">
-                <Droplets className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
-                Super Absorbent Core
-              </h3>
-              <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                Imported Japanese Sumitomo and Nippon SAP delivers instantaneous gelation with zero re-wet or reverse osmosis.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-[#EDE3D3] text-[#B4835A] flex items-center justify-center mb-4">
-                <PackageCheck className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
-                Tailored Packaging
-              </h3>
-              <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                High-definition flexographic polybag printing, compact retail boxes, or neutral white-label master cartons.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-[#EDE3D3] text-[#B4835A] flex items-center justify-center mb-4">
-                <Ship className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
-                Reliable Logistics
-              </h3>
-              <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                Direct container stuffing at our Surat hub and rapid port handoff at Hazira for predictable voyage schedules.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-[#EDE3D3] text-[#B4835A] flex items-center justify-center mb-4">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
-                Stringent QC
-              </h3>
-              <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
-                Automated optical defect detectors eliminate flawed pieces in real time, backed by climate-controlled lab audits.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. WHY GLOBAL BUYERS CHOOSE VEGA IMPEX (5 tiles) */}
-      <section className="py-16 bg-white border-y border-[#E3D9C8]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A] block mb-2">
-              Our Core Value Proposition
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2E4A5C]">
-              Why Global Buyers Choose Vega Impex
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            {[
-              {
-                num: "01",
-                title: "Supplier Evaluation",
-                desc: "Rigorous vetting of partner manufacturing lines for ISO 9001 and GMP hygiene compliance.",
-              },
-              {
-                num: "02",
-                title: "Quality Inspection",
-                desc: "Multi-stage pre-production, in-line, and pre-loading container verification.",
-              },
-              {
-                num: "03",
-                title: "OEM Project Management",
-                desc: "Dedicated account manager coordinating packaging design, cylinder engraving, and approvals.",
-              },
-              {
-                num: "04",
-                title: "Export Documentation",
-                desc: "Full customs documentation: CO, Form-E, Bill of Lading, COA, and sanitization clearances.",
-              },
-              {
-                num: "05",
-                title: "Global Logistics Support",
-                desc: "Container space booking and optimized CBM compression to reduce landed unit shipping cost.",
-              },
-            ].map((tile, i) => (
-              <div
-                key={i}
-                className="bg-[#F6F1E9] p-5 rounded-2xl border border-[#E3D9C8] flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-xs font-bold text-[#B4835A] block mb-2">{tile.num}</span>
-                  <h3 className="text-sm font-bold text-[#2E4A5C] mb-2">{tile.title}</h3>
-                  <p className="text-xs text-[#5B6B75] leading-relaxed">{tile.desc}</p>
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3D9C8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="relative aspect-video w-full bg-[#EDE3D3]/50">
+                  <Image
+                    src="/images/factory/in-house-lab.jpg"
+                    alt="Raw Material Inspection"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-[#B4835A] text-white flex items-center justify-center font-bold text-sm shadow">
+                    1
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-bold text-[#2E4A5C] mb-1.5">
+                    Raw Material Inspection
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                    Verification of imported SAP, non-woven topsheets, elastic waistbands, and waterproof films before manufacturing.
+                  </p>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3D9C8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="relative aspect-video w-full bg-[#EDE3D3]/50">
+                  <Image
+                    src="/images/factory/automated-production.jpg"
+                    alt="In-Process Monitoring"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-[#B4835A] text-white flex items-center justify-center font-bold text-sm shadow">
+                    2
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-bold text-[#2E4A5C] mb-1.5">
+                    In-Process Monitoring
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                    Automated optical defect detectors and real-time tension checks during high-speed production to eliminate flaws.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3D9C8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="relative aspect-video w-full bg-[#EDE3D3]/50">
+                  <Image
+                    src="/images/factory/dust-free-workshop.jpg"
+                    alt="Final Product Testing"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-[#B4835A] text-white flex items-center justify-center font-bold text-sm shadow">
+                    3
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-bold text-[#2E4A5C] mb-1.5">
+                    Final Product Testing
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                    Rigorous climate-controlled lab audits for fluid absorbency, leakage, rewet values, and dermatological skin safety.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3D9C8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div className="relative aspect-video w-full bg-[#EDE3D3]/50">
+                  <Image
+                    src="/images/factory/warehouse.jpg"
+                    alt="Pre-Shipment Inspection"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-[#B4835A] text-white flex items-center justify-center font-bold text-sm shadow">
+                    4
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-bold text-[#2E4A5C] mb-1.5">
+                    Pre-Shipment Inspection
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                    AQL random sampling, packaging sealing verification, and detailed photo/video inspection reports before container departure.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 8. ABOUT VEGA IMPEX SUMMARY BLOCK + 6 MINI VALUE CHIPS */}
+      {/* 7. WHY CHOOSE US (Kairui-Inspired 6 Value Cards) */}
+      <section className="py-16 lg:py-24 bg-white border-y border-[#E3D9C8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A] block mb-2">
+              Our Core Strengths
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2E4A5C]">
+              Why Choose Vega Impex
+            </h2>
+            <p className="text-sm sm:text-base text-[#5B6B75] mt-2">
+              Your trusted partner for direct hygiene product sourcing, OEM manufacturing, and global export solutions.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <Factory className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  Verified India Supplier Network
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Direct access to a curated network of reliable, ISO 9001 and GMP-certified manufacturing lines in Gujarat, India.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <Tag className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  OEM &amp; Private Label Support
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Full end-to-end support for building and scaling your own brand, including custom packaging dielines and plate printing.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <BadgeDollarSign className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  Competitive Wholesale Pricing
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Factory-direct tiered pricing with optimized raw material sourcing to maximize your landed profit margins.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <ClipboardCheck className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  Strict Quality Control Process
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Multi-level inspections from raw material receipt to in-line optical detection and pre-shipment container audits.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <Clock className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  Fast Response Sourcing
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Quick turnaround within 24 hours on inquiries, technical quotations, dieline assistance, and express sample dispatch.
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F1E9] border border-[#E3D9C8] flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-white text-[#B4835A] flex items-center justify-center mb-4 shadow-sm">
+                  <Ship className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-[#2E4A5C] mb-2">
+                  Global Export Experience
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B6B75] leading-relaxed">
+                  Comprehensive customs clearance documentation (CO, Form-E, B/L) and container packing optimization for smooth transit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. ABOUT VEGA IMPEX SUMMARY BLOCK */}
       <section className="py-16 lg:py-24 bg-[#F6F1E9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -504,13 +675,13 @@ export default function HomePage() {
                 Integrated Manufacturing Network
               </span>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-[#2E4A5C] leading-snug">
-                Your Strategic OEM Manufacturing Partner in Surat, India
+                Your Strategic OEM Manufacturing Partner in Gujarat, India
               </h2>
               <p className="text-sm sm:text-base text-[#5B6B75] leading-relaxed">
-                Vega Impex Integrated Manufacturing Network is headquartered in Surat, Gujarat — India&apos;s largest hygiene products manufacturing cluster. Unlike a single factory limited to one or two production lines, our integrated network selects the most suitable specialized line for your specific volume, core technology, and price target.
+                Vega Impex Integrated Manufacturing Network is headquartered in Gujarat — India&apos;s largest hygiene products manufacturing cluster. Unlike a single factory limited to one or two production lines, our integrated network selects the most suitable specialized line for your specific volume, core technology, and price target.
               </p>
               <p className="text-sm sm:text-base text-[#5B6B75] leading-relaxed">
-                We are not just a trading company — we are your strategic OEM manufacturing partner, ensuring quality control, on-time delivery, and full export documentation from FOB Hazira Port.
+                We are not just a trading company — we are your strategic OEM manufacturing partner, ensuring quality control, on-time delivery, and full export documentation from India.
               </p>
 
               {/* 6 Mini Value Chips */}
@@ -549,14 +720,13 @@ export default function HomePage() {
               <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E3D9C8] shadow-xl relative">
                 <div className="text-5xl text-[#B4835A]/30 font-serif leading-none mb-4">“</div>
                 <blockquote className="text-base sm:text-lg text-[#2E4A5C] font-medium leading-relaxed italic mb-6">
-                  &ldquo;We don&apos;t just manufacture products — we build trust. Every box that leaves Surat carries our commitment to your brand&apos;s success.&rdquo;
+                  &ldquo;We don&apos;t just manufacture products — we build trust. Every box that leaves Gujarat carries our commitment to your brand&apos;s success.&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-4 pt-4 border-t border-[#E3D9C8]">
                   <div className="w-12 h-12 rounded-full bg-[#EDE3D3] text-[#B4835A] flex items-center justify-center font-bold text-lg">
                     VI
                   </div>
                   <div>
-                    {/* TODO: confirm name/title/photo with client */}
                     <div className="text-sm font-bold text-[#2E4A5C]">
                       Leadership Team
                     </div>
@@ -582,7 +752,7 @@ export default function HomePage() {
               Factory Strength &amp; Production Scale
             </h2>
             <p className="text-xs sm:text-sm text-[#5B6B75] mt-1">
-              High-speed servo machinery operating in cleanroom environments with zero manual contamination.
+              High-speed servo machinery operating in cleanroom environments with automated optical defect detection.
             </p>
           </div>
 
@@ -602,7 +772,7 @@ export default function HomePage() {
                   Automated Production
                 </h3>
                 <p className="text-xs text-[#5B6B75]">
-                  Full-servo high-speed converting lines producing up to 800 pieces per minute.
+                  Full-servo high-speed converting lines producing up to 800 pieces per minute with optical inspection.
                 </p>
               </div>
             </div>
@@ -622,7 +792,7 @@ export default function HomePage() {
                   Dust-Free Workshop
                 </h3>
                 <p className="text-xs text-[#5B6B75]">
-                  Positive-pressure air-filtered GMP cleanrooms maintaining strict sterile protocols.
+                  Positive-pressure air-filtered GMP cleanrooms maintaining sterile medical-grade protocols.
                 </p>
               </div>
             </div>
@@ -642,7 +812,7 @@ export default function HomePage() {
                   In-House Testing Lab
                 </h3>
                 <p className="text-xs text-[#5B6B75]">
-                  Daily batch testing for SAP absorbency, re-wet values, and tensile elasticity.
+                  Daily batch testing for SAP absorbency, re-wet retention, and material tensile elasticity.
                 </p>
               </div>
             </div>
@@ -662,7 +832,7 @@ export default function HomePage() {
                   Logistics &amp; Warehouse
                 </h3>
                 <p className="text-xs text-[#5B6B75]">
-                  High-capacity container staging yard with direct connection to Hazira Port.
+                  High-capacity container staging yard for rapid container stuffing and maritime export dispatch.
                 </p>
               </div>
             </div>
@@ -670,40 +840,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 10. OEM CTA BANNER: "Your Brand, Our Production" */}
-      <section className="py-14 bg-[#2E4A5C] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#33495A] rounded-3xl p-8 sm:p-12 border border-white/10 flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="space-y-3 text-center lg:text-left">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A]">
-                Turnkey Private Label Solution
-              </span>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-white">
-                Your Brand, Our Production
-              </h2>
-              <p className="text-sm sm:text-base text-[#EDE3D3]/80 max-w-xl">
-                Low MOQ starting from 1×20GP container. Free dieline design and packaging artwork assistance. Full export compliance for your local market.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
-              <Link
-                href="/oem-service"
-                className="px-8 py-3.5 rounded-full text-sm font-bold text-[#2E4A5C] bg-[#EDE3D3] hover:bg-white shadow-md transition-all"
-              >
-                Explore OEM Process →
-              </Link>
-              <Link
-                href="/get-quotation"
-                className="px-8 py-3.5 rounded-full text-sm font-bold text-white bg-[#B4835A] hover:bg-[#9C6F49] shadow-md transition-all"
-              >
-                Request Quotation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 11. PRODUCTION CAPACITY AT A GLANCE (4-stat counters) */}
+      {/* 10. PRODUCTION CAPACITY AT A GLANCE (4-stat counters) */}
       <section className="py-16 bg-[#F6F1E9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10">
@@ -714,8 +851,7 @@ export default function HomePage() {
               Production Capacity at a Glance
             </h2>
             <p className="text-xs text-[#5B6B75] mt-1">
-              {/* TODO: confirm exact production numbers with client */}
-              Capacity figures based on integrated multi-factory network outputs in Surat.
+              Scalable capacity figures based on integrated multi-factory network outputs in Gujarat, India.
             </p>
           </div>
 
@@ -733,15 +869,15 @@ export default function HomePage() {
                 12+
               </span>
               <span className="text-xs font-semibold text-[#5B6B75]">
-                High-Speed Servo Lines
+                High-Speed Production Lines
               </span>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] text-center shadow-sm">
               <span className="text-3xl sm:text-4xl font-extrabold text-[#2E4A5C] block mb-1">
-                30+
+                5+
               </span>
               <span className="text-xs font-semibold text-[#5B6B75]">
-                Active Export Markets
+                Active Global Markets
               </span>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-[#E3D9C8] text-center shadow-sm">
@@ -756,7 +892,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 12. PRODUCTION VIDEO BLOCK */}
+      {/* 11. PRODUCTION VIDEO BLOCK */}
       <section className="py-12 bg-white border-b border-[#E3D9C8]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-[#2E4A5C] border border-[#E3D9C8] shadow-xl group">
@@ -767,7 +903,6 @@ export default function HomePage() {
               className="object-cover opacity-60 group-hover:scale-102 transition-transform duration-500"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
-              {/* TODO: client to supply real factory video or YouTube embed URL */}
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#B4835A] hover:bg-[#9C6F49] text-white flex items-center justify-center shadow-2xl transition-transform duration-300 transform group-hover:scale-110 mb-4 cursor-pointer">
                 <PlayCircle className="w-10 h-10 sm:w-12 sm:h-12" />
               </div>
@@ -782,7 +917,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 13. LATEST INSIGHTS (3 Blog Teaser Cards) */}
+      {/* 12. LATEST INSIGHTS (3 Blog Teaser Cards) */}
       <section className="py-16 lg:py-20 bg-[#F6F1E9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
@@ -803,7 +938,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {blogPosts.slice(0, 3).map((post) => (
               <div
                 key={post.slug}
                 className="bg-white rounded-2xl border border-[#E3D9C8] overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
@@ -848,14 +983,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 14. INLINE QUOTATION FORM */}
+      {/* 13. INLINE QUOTATION FORM */}
       <section className="py-16 lg:py-24 bg-white border-y border-[#E3D9C8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <QuotationForm />
         </div>
       </section>
 
-      {/* 15. FAQ ACCORDION (10 items) */}
+      {/* 14. FAQ ACCORDION (8 Items from Kairui) */}
       <section className="py-16 lg:py-24 bg-[#F6F1E9]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

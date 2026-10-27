@@ -17,16 +17,16 @@ import {
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "About Vega Impex | Integrated Hygiene Manufacturing Network Surat India",
+  title: "About Vega Impex | Integrated Hygiene Manufacturing Network Gujarat India",
   description:
-    "Learn about Vega Impex, India's leading hygiene OEM manufacturing network based in Surat, Gujarat. Serving 30+ export countries with ISO 9001 certified production lines via FOB Hazira Port.",
+    "Learn about Vega Impex, India's leading hygiene OEM manufacturing network based in Gujarat. Serving 5+ export countries with ISO 9001 certified production lines.",
   alternates: {
     canonical: "https://vegaimpex.com/about",
   },
   openGraph: {
-    title: "About Vega Impex | Integrated Hygiene Manufacturing Network Surat India",
+    title: "About Vega Impex | Integrated Hygiene Manufacturing Network Gujarat India",
     description:
-      "Strategic OEM manufacturing partner in Surat, Gujarat. 8 hygiene product categories, ISO 9001 / FDA / CE certified, FOB Hazira Port.",
+      "Strategic OEM manufacturing partner in Gujarat, India. 6 hygiene product categories, ISO 9001 / FDA / CE certified.",
     url: "https://vegaimpex.com/about",
   },
 };
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-sm sm:text-base text-[#5B6B75] leading-relaxed">
                 <p>
-                  <strong>Vega Impex Integrated Manufacturing Network</strong> is headquartered in Surat, Gujarat — India&apos;s largest hygiene products manufacturing cluster. We specialize in OEM manufacturing and export of baby diapers, baby pull-up pants, sanitary napkins, disposable period pants, panty liners, adult diapers, underpads, and baby wipes.
+                  <strong>Vega Impex Integrated Manufacturing Network</strong> is headquartered in Gujarat — India&apos;s largest hygiene products manufacturing cluster. We specialize in OEM manufacturing and export of baby diapers, sanitary napkins, disposable period pants, panty liners, adult diapers, and underpads.
                 </p>
                 <p>
                   With years of industry experience and strong partnerships with ISO 9001 certified factories, we serve clients across Southeast Asia, the Middle East, Africa, Europe, and the Americas. Our mission is to provide high-quality, cost-effective hygiene solutions with flexible OEM/ODM services, neutral packaging, and private label support.
@@ -381,7 +381,7 @@ export default function AboutPage() {
             </div>
             <div>
               <span className="text-3xl sm:text-4xl font-extrabold text-[#2E4A5C] block mb-1">
-                30+
+                5+
               </span>
               <span className="text-xs font-semibold text-[#5B6B75]">
                 Global Export Destinations

@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Request Quotation & Free Samples | Vega Impex Surat India",
   description:
-    "Request factory-direct FOB Hazira quotation and free physical product samples for OEM baby diapers, sanitary pads, period pants, adult briefs, and wipes.",
+    "Request factory-direct quotation and free physical product samples for OEM baby diapers, sanitary pads, period pants, adult briefs, and underpads in Gujarat, India.",
   alternates: {
     canonical: "https://vegaimpex.com/get-quotation",
   },

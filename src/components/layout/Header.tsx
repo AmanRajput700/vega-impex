@@ -35,11 +35,7 @@ export function Header() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-xs font-medium">
               <ShieldCheck className="w-3.5 h-3.5 text-[#B4835A]" />
-              Direct OEM Hygiene Manufacturing Hub · Surat, Gujarat, India
-            </span>
-            <span className="text-white/40">|</span>
-            <span className="text-xs text-[#EDE3D3]/80">
-              Export Gateway: 🚢 <strong>FOB Hazira Port</strong> (Direct Sea Freight)
+              Direct OEM Hygiene Manufacturing Hub · Gujarat, India
             </span>
           </div>
           <div className="flex items-center gap-5 text-xs font-medium">
@@ -74,15 +70,23 @@ export function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group focus:outline-none">
-            <div className="relative w-48 sm:w-56 h-12">
+          <Link href="/" className="flex items-center gap-3 group focus:outline-none">
+            <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0">
               <Image
-                src="/logo.svg"
-                alt="Vega Impex - Integrated Manufacturing Network"
+                src="/logo-mark.png"
+                alt="Vega Impex Logo"
                 fill
                 priority
-                className="object-contain object-left transition-transform duration-300 group-hover:scale-[1.02]"
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
               />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-extrabold text-xl sm:text-2xl tracking-wider text-[#0A2540] leading-none">
+                VEGA IMPEX
+              </span>
+              <span className="text-[9px] sm:text-[10px] font-semibold text-[#B4835A] tracking-widest uppercase mt-1">
+                Hygiene OEM &amp; Export
+              </span>
             </div>
           </Link>
 
@@ -126,7 +130,7 @@ export function Header() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[680px] bg-white rounded-2xl shadow-2xl border border-[#E3D9C8] p-5 grid grid-cols-2 gap-3 animate-in fade-in slide-in-from-top-2 duration-200 z-50">
                   <div className="col-span-2 pb-2 mb-1 border-b border-[#E3D9C8]/60 flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#B4835A]">
-                      Export Product Catalog (8 Categories)
+                      Export Product Catalog (6 Core Categories)
                     </span>
                     <Link
                       href="/products"
@@ -282,7 +286,7 @@ export function Header() {
                     All Products
                   </Link>
                   <span className="text-[11px] font-semibold text-[#B4835A] uppercase">
-                    8 Items
+                    6 Items
                   </span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2 pt-1">
